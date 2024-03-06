@@ -1,5 +1,8 @@
 const botoes = document.querySelectorAll(".botao");
-console.log(botoes)
+const textos = document.querySelectorAll(".aba-conteudo");
+const contadores = document.querySelectorAll(".contador");
+
+contadores[0]
 
 for (let i=0;i < botões.length; i++) {
     console.log(i);
@@ -7,7 +10,9 @@ for (let i=0;i < botões.length; i++) {
 
         for(let j=0; j<botoes.length; j++){
             botoes[j].classList.remove("ativo");
+            textos[j].classList.remove("ativo");
         }
         botoes[i].classList.add("ativo");
+        textos[i].classList.add("ativo");
     }
 }
